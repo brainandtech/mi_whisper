@@ -1,0 +1,53 @@
+La maquina tiene que tener instalados los driver de nvidia y cuda (el lenguaje de programacion de las nvidia)
+
+
+instalar entornos virtuales
+pip install virtualenv
+
+CREAR EL ENTORNO virtual
+Si estamos en bash en el terminal
+$ virtualenv env
+
+ACTIVAMOS EL ENTORN virtual (en Windoes com bash)
+$ source env/Scripts/activate
+
+ACTIVAMOS EL ENTORN virtual (en linux con bash)
+$ source env/bin/activate
+
+ACTIVAMOS EL ENTORN virtual (en Windoes con cmd)
+cd env
+cd Scripts
+activate
+
+
+ENTORNO VIRTUAL ACTIVADO
+ (env)
+
+con este comando sabemos los paquetes instalados en nuestro entorno
+pip freeze
+
+lo normal es hacer esto para poder recuperar nuestro entorno virtualº
+pip freeze > requirements.txt
+
+DESACTIVARA ENTORNO VIRTUAL
+deactivate
+
+
+
+pip install git+https://github.com/openai/whisper.git 
+
+pip install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git
+
+
+
+si ejecutamos este comando, podemos ver el uso de la GPU y muchos parámetros más
+nvidia-settings 
+
+
+
+EJECUCION
+Abrir terminal (bash)
+Ir al entorno virtual (env): 
+adminht04671@server-ciber:/media/disk1/2023/whisper$ source env/bin/activate
+ejecutar directamente con:
+(env) adminht04671@server-ciber:/media/disk1/2023/whisper$ python main.py
